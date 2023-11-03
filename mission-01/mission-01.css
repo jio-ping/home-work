@@ -13,18 +13,8 @@ body {
   height: 310px;
   background-color: white;
 }
-
-.card-wide:active,
-.card-wide:hover,
-.card-normal:hover,
-.card-normal:active {
-  .product-url {
-    background-color: #0074e9;
-    width: 112px;
-  }
-  .product-url::before {
-    content: "구매하기";
-  }
+.card-slogan {
+  color: #555555;
 }
 
 .container {
@@ -37,9 +27,24 @@ body {
 .product-url {
   width: 42px;
   height: 42px;
-  background: gray;
+  background: rgb(202, 202, 202);
   border: 0;
   color: white;
+}
+
+.card-wide:focus,
+.card-wide:hover,
+.card-normal:hover,
+.card-normal:focus {
+  .product-url {
+    background-color: #0074e9;
+    width: 112px;
+  }
+  .product-url::before {
+    content: "구매하기";
+    font-size: 14px;
+    padding-right: 13px;
+  }
 }
 
 /* 상단 wide card  */
@@ -105,6 +110,7 @@ body {
   margin: 0;
   text-align: center;
   position: absolute;
+  font-size: 18px;
 }
 
 .card-normal .product-image {
@@ -113,8 +119,10 @@ body {
   top: 100px;
   left: 23px;
 }
+
 .card-normal .product-url {
   position: absolute;
   top: 248px;
   left: 20px;
+  font-size: 14px;
 }
