@@ -3,7 +3,6 @@
 ### 시연
 
 ![미션1](https://github.com/jio-ping/home-work/assets/134420660/fb805e2b-d64c-449c-b3f2-e4951c6d1489)
--work/assets/134420660/91bfd4ee-3a4e-4fd5-89bd-4c41c6264216">
 
 ### 기본 레이아웃 마크업 및 기능
 
