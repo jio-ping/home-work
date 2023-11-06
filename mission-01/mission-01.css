@@ -29,12 +29,12 @@ body {
   border: 0;
   color: white;
   text-decoration: none;
+  line-height: 42px;
+  text-align: center;
 }
 
-.card-wide:focus,
 .card-wide:hover,
-.card-normal:hover,
-.card-normal:focus {
+.card-normal:hover {
   .product-url {
     background-color: #0074e9;
     width: 112px;
@@ -45,7 +45,15 @@ body {
     padding-right: 13px;
   }
 }
+.product-url:focus,
+.prodcut-url::before {
+  background-color: #0074e9;
+  width: 112px;
 
+  content: "구매하기";
+  font-size: 14px;
+  padding-right: 13px;
+}
 /* 상단 wide card  */
 .card-wide {
   width: 502px;
