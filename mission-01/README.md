@@ -2,13 +2,18 @@
 
 ### 시연
 
-![mission01 시연영상](https://github.com/jio-ping/home-work/assets/134420660/d79f5ed1-4d85-4c1e-8a61-e044b068a819)
+![미션1](https://github.com/jio-ping/home-work/assets/134420660/fb805e2b-d64c-449c-b3f2-e4951c6d1489)
+-work/assets/134420660/91bfd4ee-3a4e-4fd5-89bd-4c41c6264216">
 
 ### 기본 레이아웃 마크업 및 기능
 
-![KakaoTalk_Photo_2023-11-04-02-02-19](https://github.com/jio-ping/home-work/assets/134420660/4e8cd09f-e24b-40fd-9559-42fccb9a594b)
+<img width="728" alt="스크린샷 2023-11-06 오후 11 49 05" src="https://github.com/jio-ping/home-work/assets/134420660/d6d112c6-f757-4c1d-8952-983f38818892">
 
-### 추후 수정하고 싶은 사항
+### light house 성능,접근성 평가
 
-- 보다 접근성을 고려한 마크업
+<img width="800" alt="스크린샷 2023-11-06 오후 11 25 43" src="https://github.com/jio-ping/home-work/assets/134420660/91bfd4ee-3a4e-4fd5-89bd-4c41c6264216">
+
+### 아쉬운 점
+
 - 다른 display 속성으로 스타일링
+- semantic markup 🤯
