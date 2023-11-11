@@ -15,7 +15,7 @@
         <span class="greeting">이디야커피에 오신 것을 환영합니다.</span>
       </div>
       <div class="login-form">
-        <form action="" id="login-form">
+        <form id="login-form" action="" method="post">
           <label for="email"></label
           ><input
             id="email"
@@ -23,13 +23,27 @@
             type="email"
             placeholder="이메일"
             required
+            onkeyup="validateEmail()"
           />
+          <img class="login-state hidden" src="./assets/invalid.png" alt="" />
+          <p id="error-message"></p>
           <label for="password"></label>
           <input
             id="password"
             class="login-field pwd"
             type="password"
             placeholder="패스워드"
+          />
+          <img
+            id="visible"
+            class="login-state hidden"
+            src="./assets/hidden-state.png"
+            alt=""
+          />
+          <img
+            id="hidden"
+            class="login-state hidden"
+            src="./assets/visible-state.png"
           />
           <div class="remember-section">
             <input type="checkbox" id="remember-email" /><label
@@ -39,9 +53,9 @@
           </div>
         </form>
       </div>
-      <div type="submit" class="btn">
-        <button class="login-signIn-btn" form="login-form">
-          로그인 <img src="./assets/log-arrow.svg" />
+      <div class="btn">
+        <button type="submit" class="login-signIn-btn" form="login-form">
+          로그인 <img src="./assets/log-arrow.svg" alt="" />
         </button>
         <a href="" class="login-signIn-btn"
           >회원가입<img src="./assets/singin-arrow.svg" alt=""

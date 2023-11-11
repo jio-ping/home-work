@@ -1,4 +1,5 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 :root {
   --primary-color: #24388d;
   --font-color: #fefefe;
@@ -105,9 +106,11 @@ button {
   .email {
     margin-bottom: 53px;
   }
+
   .pwd {
     margin-bottom: 14px;
   }
+
   .remember-section {
     align-self: flex-start;
     & label {
@@ -191,4 +194,9 @@ button {
       }
     }
   }
+}
+/* 여기 자바스크립트랑 건드려야 */
+.hidden {
+  width: 14.67px;
+  display: none;
 }
