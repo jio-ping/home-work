@@ -25,8 +25,13 @@
             required
             onkeyup="validateEmail()"
           />
-          <img class="login-state hidden" src="./assets/invalid.png" alt="" />
-          <p id="error-message"></p>
+          <img
+            id="email-invalid-icon"
+            class="login-state hidden"
+            src="./assets/invalid.png"
+            alt=""
+          />
+          <p id="error-message" class="email-error"></p>
           <label for="password"></label>
           <input
             id="password"

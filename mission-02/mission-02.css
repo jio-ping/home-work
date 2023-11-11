@@ -22,7 +22,6 @@ body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 a {
@@ -73,11 +72,10 @@ button {
   width: 540px;
   height: auto;
   background-color: transparent;
-  display: flex;
-  flex-flow: column;
   color: var(--font-color);
   gap: 3px;
   font-weight: 400;
+  position: relative;
 
   & form {
     display: flex;
@@ -88,6 +86,7 @@ button {
     font-size: 1.8rem;
     color: var(--font-color);
   }
+
   .login-field {
     width: inherit;
     height: 48px;
@@ -103,12 +102,23 @@ button {
     background-color: transparent;
     color: var(--font-color);
   }
-  .email {
-    margin-bottom: 53px;
-  }
 
+  .email-error {
+    margin-block-end: 31px;
+    align-self: flex-start;
+  }
   .pwd {
     margin-bottom: 14px;
+  }
+
+  .login-state {
+    width: 14.67px;
+    position: absolute;
+    left: 516px;
+    top: 20px;
+  }
+  .hidden {
+    display: none;
   }
 
   .remember-section {
@@ -117,6 +127,19 @@ button {
       padding-left: 1rem;
       font-size: 1.2rem;
       margin-block-end: 70px;
+    }
+    & input[type="checkbox"] {
+      margin: 0;
+    }
+    & input[type="checkbox"]:checked {
+      appearance: none;
+      background-color: white;
+      cursor: poiner;
+      color: black;
+    }
+    & input[type="checkbox"]:checked::before {
+      content: "\2713";
+      font-size: 13px;
     }
   }
 }
@@ -169,6 +192,11 @@ button {
     }
     .login-form {
       width: 311px;
+      position: relative;
+      .login-state {
+        top: 30px;
+        left: 287px;
+      }
     }
     .btn {
       width: 311px;
@@ -194,9 +222,4 @@ button {
       }
     }
   }
-}
-/* 여기 자바스크립트랑 건드려야 */
-.hidden {
-  width: 14.67px;
-  display: none;
 }
