@@ -1,0 +1,194 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+:root {
+  --primary-color: #24388d;
+  --font-color: #fefefe;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  min-width: 384px;
+  margin: 0;
+  width: 100ㅍㅈ;
+  height: 100vh;
+  background: var(--primary-color) url("./assets/login-bg.png") no-repeat center
+    center;
+  background-size: cover;
+  color: var(--font-color);
+  font-weight: 300;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+a:visited {
+  color: inherit;
+}
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 540px;
+}
+/* 상단 타이틀  */
+.title-greeting {
+  display: flex;
+  flex-flow: column;
+  color: var(--font-color);
+  --title: 3.6rem;
+  margin-block-start: 10rem;
+  margin-block-end: 9rem;
+  & h2 {
+    font-weight: 300;
+    font-size: var(--title);
+    margin-block-end: 30px;
+  }
+  .greeting {
+    font-size: 1.8rem;
+  }
+
+  .greeting:last-child {
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+}
+
+/* 로그인 폼 */
+.login-form {
+  width: 540px;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+  color: var(--font-color);
+  gap: 3px;
+  font-weight: 400;
+
+  & form {
+    display: flex;
+    flex-flow: column;
+  }
+
+  & input::placeholder {
+    font-size: 1.8rem;
+    color: var(--font-color);
+  }
+  .login-field {
+    width: inherit;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--font-color);
+    line-height: 48px;
+    color: var(--font-color);
+  }
+
+  .login-field:focus {
+    outline: none;
+    background-color: transparent;
+    color: var(--font-color);
+  }
+  .email {
+    margin-bottom: 53px;
+  }
+  .pwd {
+    margin-bottom: 14px;
+  }
+  .remember-section {
+    align-self: flex-start;
+    & label {
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      margin-block-end: 70px;
+    }
+  }
+}
+/* 로그인, 회원가입 버튼 */
+.btn {
+  margin-top: 70px;
+  width: inherit;
+  display: flex;
+
+  gap: 2rem;
+  & img {
+    width: 20px;
+    position: absolute;
+    top: 14px;
+    left: 226px;
+  }
+  & button,
+  & a {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 260px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  & button {
+    background-color: #ffffff;
+    color: var(--primary-color);
+  }
+
+  & a {
+    border: 2px solid var(--font-color);
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+
+    .container {
+      width: 311px;
+      display: flex;
+      flex-flow: column;
+    }
+    .title-greeting {
+      margin-block-end: 114px;
+    }
+    .login-form {
+      width: 311px;
+    }
+    .btn {
+      width: 311px;
+      display: flex;
+      flex-flow: column;
+
+      .login-signIn-btn {
+        width: inherit;
+        box-sizing: border-box;
+        position: relative;
+
+        & img {
+          top: 14px;
+          left: 277px;
+        }
+      }
+      & button {
+        background-color: #fefeff;
+        color: #d2c9b6;
+      }
+      & a {
+        background-color: transparent;
+      }
+    }
+  }
+}

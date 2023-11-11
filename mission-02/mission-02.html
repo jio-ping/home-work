@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="./mission-02.css" />
+    <script src="./mission-02.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-greeting">
+        <h2 class="title">로그인</h2>
+        <span class="greeting">Welcome, Ediya Coffee</span>
+        <span class="greeting">이디야커피에 오신 것을 환영합니다.</span>
+      </div>
+      <div class="login-form">
+        <form action="" id="login-form">
+          <label for="email"></label
+          ><input
+            id="email"
+            class="login-field email"
+            type="email"
+            placeholder="이메일"
+            required
+          />
+          <label for="password"></label>
+          <input
+            id="password"
+            class="login-field pwd"
+            type="password"
+            placeholder="패스워드"
+          />
+          <div class="remember-section">
+            <input type="checkbox" id="remember-email" /><label
+              for="remember-email"
+              >이메일 저장</label
+            >
+          </div>
+        </form>
+      </div>
+      <div type="submit" class="btn">
+        <button class="login-signIn-btn" form="login-form">
+          로그인 <img src="./assets/log-arrow.svg" />
+        </button>
+        <a href="" class="login-signIn-btn"
+          >회원가입<img src="./assets/singin-arrow.svg" alt=""
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
