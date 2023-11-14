@@ -8,6 +8,11 @@
     color: #757575;
     background: transparent;
   }
+  & select:focus {
+    outline: none;
+    border: solid #2ede75 2px;
+    border-radius: 2px;
+  }
   & img {
     position: absolute;
     width: 1rem;
