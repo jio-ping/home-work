@@ -11,10 +11,12 @@
   & img {
     position: absolute;
     width: 1rem;
+    z-index: -1;
   }
   .toggle {
     position: absolute;
     width: 1rem;
+    z-index: -1;
   }
 }
 
@@ -50,7 +52,6 @@
 
 /* 모바일 상단 */
 .up-mobile-select-language {
-  background-color: aliceblue;
   & select {
     padding: 7px 34px;
   }
