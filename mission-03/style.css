@@ -1,2 +1,5 @@
+@import "/reset.css";
+
 @import "/components/language-dropdown/index.css";
 @import "/components/logo/index.css";
+@import "/components/link/index.css";
