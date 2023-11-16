@@ -1,11 +1,9 @@
 /* 로그인, 30일 무료 버튼 공통 */
 .link-btn {
   font-family: "Spoqa Hans Sans Neo", sans-serif;
-  background: #e50914;
   color: #ffffff;
   display: inline-block;
-  text-align: center;
-  font-style: normal;
+  box-sizing: border-box;
   font-weight: 700;
 }
 
@@ -13,50 +11,123 @@
 .login-btn {
   border-radius: 4px;
   line-height: 2.5em;
+  text-align: center;
+
   &:hover {
     background: #b70710;
   }
 }
 
+/* 데스크톱 로그인 */
 @media (min-width: 768px) {
   .login-btn {
-    font-size: 1rem;
+    font-size: 1.6rem;
     width: 4.375em;
     height: 2.5em;
     aspect-ratio: 7/4;
   }
-
-  .free-btn {
-    /* 22px */
-    font-size: 1.375rem;
-    width: 210px;
-    height: 60px;
-    line-height: 2.727em;
-  }
 }
 
+/* 모바일 로그인 */
 @media (max-width: 768px) {
   .login-btn {
-    font-size: 12px;
+    font-size: 1.2rem;
     width: 5em;
     height: 2.5em;
     aspect-ratio: 2/1;
   }
-  .free-btn {
-    /* font-size:14px */
-    font-size: 14px;
-    border-radius: 2.142857142857143em;
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-  }
 }
 
 /* 30일 무료 이용 버튼 */
-.free-btn {
+.free-form {
+  display: flex;
+  & input,
+  & a {
+    padding: 0 20px;
+  }
+  .free-btn {
+    background-color: #b70710;
+    display: block;
+  }
+  .free-btn.is--invalid {
+    background: #757575;
+  }
 }
 
-:focus-visible {
-  border-radius: 2px;
-  outline: 3px solid #2ede75;
+/* 모바일 30일 무료 이용버튼 */
+@media (max-width: 768px) {
+  .free-form {
+    flex-flow: column nowrap;
+
+    & input,
+    & a {
+      border-radius: 1.875em;
+      height: 2.5em;
+      font-size: 1.4rem;
+    }
+  }
+
+  & input {
+    width: 17.5em;
+    aspect-ratio: 6.125/1;
+  }
+  & a {
+    aspect-ratio: 4/1;
+    width: 11.428em;
+    line-height: 2.5em;
+    & svg {
+      padding-left: 0.4em;
+      height: 0.9em;
+      width: 1.5714285714285714em;
+    }
+  }
+}
+
+/* 데스크톱 30일 무료 이용버튼 */
+@media (min-width: 768px) {
+  .free-form {
+    flex-flow: row;
+    position: relative;
+
+    & input {
+      font-size: 1.6rem;
+      height: 3.75em;
+      width: 33.75em;
+    }
+  }
+  & label.email-label,
+  & span.is--invalid {
+    position: absolute;
+    pointer-events: none;
+
+    font-size: 1.4rem;
+  }
+  .email-label {
+    top: 24px;
+    left: 20px;
+    font-size: 1.6rem;
+    color: #757575;
+  }
+
+  .email-label.is--active {
+    color: #e50914;
+    top: 10px;
+    left: 20px;
+  }
+
+  .error-msg.is--invalid {
+    color: #e50914;
+    bottom: -20px;
+    left: 20px;
+  }
+  & a {
+    font-size: 2.2rem;
+    width: 9.545454545454545em;
+    height: 2.9em;
+    aspect-ratio: 7/2;
+    line-height: 2.727272727272727em;
+    & svg {
+      padding-left: 0.4em;
+    }
+  }
 }
