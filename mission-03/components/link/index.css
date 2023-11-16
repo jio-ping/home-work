@@ -12,8 +12,8 @@
   border-radius: 4px;
   line-height: 2.5em;
   text-align: center;
-
-  &:hover {
+  background-color: #e50914;
+  #E50914 &:hover {
     background: #b70710;
   }
 }
@@ -41,12 +41,14 @@
 /* 30일 무료 이용 버튼 */
 .free-form {
   display: flex;
+  position: relative;
+
   & input,
   & a {
     padding: 0 20px;
   }
   .free-btn {
-    background-color: #b70710;
+    background-color: #e50914;
     display: block;
   }
   .free-btn.is--invalid {
@@ -58,7 +60,16 @@
 @media (max-width: 768px) {
   .free-form {
     flex-flow: column nowrap;
-
+    & label {
+      font-size: 1.4rem;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+    & label.is--active {
+      top: -15px;
+      color: #e50914;
+    }
     & input,
     & a {
       border-radius: 1.875em;
@@ -66,7 +77,9 @@
       font-size: 1.4rem;
     }
   }
-
+  .is--invalid {
+    display: none;
+  }
   & input {
     width: 17.5em;
     aspect-ratio: 6.125/1;
@@ -74,6 +87,7 @@
   & a {
     aspect-ratio: 4/1;
     width: 11.428em;
+    height: 2.5em;
     line-height: 2.5em;
     & svg {
       padding-left: 0.4em;
@@ -87,7 +101,6 @@
 @media (min-width: 768px) {
   .free-form {
     flex-flow: row;
-    position: relative;
 
     & input {
       font-size: 1.6rem;
