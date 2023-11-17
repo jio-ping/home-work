@@ -11,6 +11,7 @@ function validateEmail() {
   if (validEmail) {
     errorMsg.classList.remove("is--invalid");
     validButton.classList.remove("is--invalid");
+    errorMsg.innerText = "";
   } else {
     errorMsg.innerText = "정확한 이메일 주소를 입력하세요.";
     validButton.classList.add("is--invalid");
