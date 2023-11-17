@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 컴포넌트</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <!-- 로고 -->
+      <h1 class="sr-only">넷플릭스</h1>
+      <a class="logo-link" href="/"
+        ><img src="/images/netflix-logo.svg" alt="netflix"
+      /></a>
+      <div class="lang-log-wrapper">
+        <div class="select-wrapper">
+          <h2 class="sr-only">언어 선택</h2>
+          <select class="language-toggle">
+            <option value="한국어">한국어</option>
+            <option value="영어">영어</option>
+          </select>
+          <span class="global-icon" aria-hidden="true"></span>
+          <span class="toggle-icon" aria-hidden="true"></span>
+        </div>
+        <a class="link-btn login-btn" href="/"> 로그인 </a>
+      </div>
+    </div>
+  </body>
+</html>
