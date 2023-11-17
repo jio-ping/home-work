@@ -1,70 +1,63 @@
-/* 언어 선택 기본 적용  */
-.language-drop-down {
+.language-toggle {
+  font-size: 1.6rem;
+  color: #757575;
+  border: #757575 1px solid;
+}
+
+.select-wrapper {
   position: relative;
-  & select {
+  & select,
+  & option {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     color: #757575;
     background: transparent;
   }
-  & select:focus {
-    outline: none;
-    border: solid #2ede75 2px;
-    border-radius: 2px;
-  }
-  & img {
-    position: absolute;
-    width: 1rem;
-    z-index: -1;
-  }
-  .toggle {
-    position: absolute;
-    width: 1rem;
-    z-index: -1;
-  }
+}
+.global-icon,
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+}
+.global-icon {
+  background: url("/images/global.svg");
+}
+.toggle-icon {
+  background: url("/images/toggle.svg");
 }
 
-/* 데스크톱 상단 언어 선택 ( 113*40 ) */
-.up-desktop-select-language {
-  & select {
-    padding: 12px 34px;
+/* 데스크톱 */
+@media (min-width: 768px) {
+  .language-toggle {
+    width: 130px;
+    height: 40px;
+    padding: 10.5px 34px;
   }
-  & img {
+  .global-icon {
     top: 12px;
     left: 10px;
   }
-  .toggle {
+  .toggle-icon {
     top: 12px;
-    left: 87px;
-  }
-}
-
-/* 데스크톱, 모바일 하단 언어 선택 ( 113*43 ) */
-.low-select-language {
-  & select {
-    padding: 13.5px 34px;
-  }
-  & img {
-    top: 13.5px;
-    left: 10px;
-  }
-  .toggle {
-    top: 13.5px;
-    left: 87px;
+    left: 90px;
   }
 }
 
 /* 모바일 상단 */
-.up-mobile-select-language {
-  & select {
-    padding: 7px 34px;
+@media (max-width: 768px) {
+  .language-toggle {
+    width: 113px;
+    height: 30px;
+    padding: 5.5px 34px;
   }
-  & img {
+  .global-icon {
     top: 7px;
     left: 10px;
   }
-  .toggle {
+  .toggle-icon {
     top: 7px;
     left: 87px;
   }
