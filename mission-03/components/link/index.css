@@ -13,7 +13,7 @@
 
   text-align: center;
   background-color: #e50914;
-  #E50914 &:hover {
+  &:hover {
     background: #b70710;
   }
 }

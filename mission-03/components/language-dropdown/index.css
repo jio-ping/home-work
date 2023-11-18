@@ -17,6 +17,11 @@
     color: #757575;
     background: transparent;
   }
+  & select:focus {
+    outline: none;
+    border: solid #2ede75 2px;
+    border-radius: 2px;
+  }
 }
 .global-icon,
 .toggle-icon {
@@ -24,13 +29,13 @@
   position: absolute;
 }
 .global-icon {
-  background: url("/images/global.svg");
+  background: url("./../../images/global.svg");
   width: 1.6rem;
   background-size: cover;
   height: 1.6rem;
 }
 .toggle-icon {
-  background: url("/images/toggle.svg");
+  background: url("./../../images/toggle.svg");
   width: 1.6rem;
   background-size: cover;
   height: 1.6rem;
