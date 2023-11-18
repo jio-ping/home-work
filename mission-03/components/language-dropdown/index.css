@@ -2,10 +2,13 @@
   font-size: 1.6rem;
   color: #757575;
   border: #757575 1px solid;
+  font-weight: 400;
 }
 
 .select-wrapper {
   position: relative;
+  width: 11.3rem;
+
   & select,
   & option {
     -moz-appearance: none;
@@ -17,16 +20,20 @@
 }
 .global-icon,
 .toggle-icon {
-  width: 16px;
-  height: 16px;
   display: block;
   position: absolute;
 }
 .global-icon {
   background: url("/images/global.svg");
+  width: 1.6rem;
+  background-size: cover;
+  height: 1.6rem;
 }
 .toggle-icon {
   background: url("/images/toggle.svg");
+  width: 1.6rem;
+  background-size: cover;
+  height: 1.6rem;
 }
 
 /* 데스크톱 */
@@ -49,16 +56,16 @@
 /* 모바일 상단 */
 @media (max-width: 768px) {
   .language-toggle {
-    width: 113px;
-    height: 30px;
-    padding: 5.5px 34px;
+    width: 11.3rem;
+    height: 3rem;
+    padding: 0.55rem 3rem;
   }
   .global-icon {
-    top: 7px;
-    left: 10px;
+    left: 1rem;
+    top: 0.7rem;
   }
   .toggle-icon {
-    top: 7px;
-    left: 87px;
+    right: 1rem;
+    top: 0.7rem;
   }
 }

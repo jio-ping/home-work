@@ -2,7 +2,7 @@
 .logo-link,
 .kor-logo-link {
   display: block;
-
+  text-decoration: none;
   & img {
     width: 100%;
   }
@@ -11,23 +11,23 @@
 /* 데스크톱 */
 @media (min-width: 768px) {
   .logo-link {
-    width: 140px;
-    height: 38px;
+    width: 14rem;
+    height: 3.8rem;
   }
   .kor-logo-link {
-    width: 158px;
-    height: 26px;
+    width: 15.8rem;
+    height: 2.76rem;
   }
 }
 
 /* 모바일 */
 @media (max-width: 768px) {
   .logo-link {
-    width: 80px;
-    height: 22px;
+    width: 8rem;
+    height: 2.2rem;
   }
   .kor-logo-link {
-    width: 144px;
-    height: 3px;
+    width: 14.4rem;
+    height: 3rem;
   }
 }

@@ -1,0 +1,71 @@
+body {
+  background: url("/images/background.png");
+
+  background-size: cover;
+}
+
+& main.home-main {
+  padding-inline: 200px;
+  color: white;
+  text-align: center;
+  .home-main-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+  }
+  border-bottom: 4px solid #2f2f2f;
+}
+
+/* 데스크톱 */
+@media (min-width: 768px) {
+  & main.home-main {
+    padding: 64px 200px 238px 200px;
+  }
+  .home-main-wrapper {
+    row-gap: 28px;
+    & h2 {
+      font-size: 6rem;
+    }
+    :nth-child(2) {
+      font-size: 2rem;
+    }
+    :nth-child(3) {
+      font-size: 1.6rem;
+    }
+    :last-child {
+      font-size: 1.6rem;
+      /* padding-bottom: 174px; */
+    }
+  }
+}
+
+/* 모바일 */
+
+@media (max-width: 768px) {
+  & main.home-main {
+    padding: 68px 18px;
+  }
+  .home-main-wrapper {
+    row-gap: 24px;
+    font-size: 10px;
+    width: 33.9rem;
+    margin: 0 auto;
+    & h2 {
+      font-size: 3.4rem;
+    }
+    :nth-child(2) {
+      font-size: 1.8rem;
+    }
+    :nth-child(3) {
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+    :nth-child(4) {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}

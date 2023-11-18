@@ -10,7 +10,7 @@
 /* 로그인버튼 */
 .login-btn {
   border-radius: 4px;
-  line-height: 2.5em;
+
   text-align: center;
   background-color: #e50914;
   #E50914 &:hover {
@@ -24,6 +24,7 @@
     font-size: 1.6rem;
     width: 4.375em;
     height: 2.5em;
+    line-height: 2.5em;
     aspect-ratio: 7/4;
   }
 }
@@ -33,7 +34,8 @@
   .login-btn {
     font-size: 1.2rem;
     width: 5em;
-    height: 2.5em;
+    height: 3rem;
+    line-height: 3rem;
     aspect-ratio: 2/1;
   }
 }
@@ -60,14 +62,20 @@
 @media (max-width: 768px) {
   .free-form {
     flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    align-items: center;
     & label {
       font-size: 1.4rem;
+      font-weight: 400;
       position: absolute;
       top: 10px;
       left: 20px;
+      color: #2f2f2f;
     }
     & label.is--active {
-      top: -15px;
+      top: -20px;
+
       color: #e50914;
     }
     & input,
@@ -76,19 +84,21 @@
       height: 2.5em;
       font-size: 1.4rem;
     }
+    & a {
+      margin: auto 0;
+    }
   }
-  .is--invalid {
-    display: none;
-  }
+
   & input {
-    width: 17.5em;
-    aspect-ratio: 6.125/1;
+    width: 24.5rem;
+    height: 4rem;
+    margin-bottom: 12px;
   }
   & a {
     aspect-ratio: 4/1;
-    width: 11.428em;
-    height: 2.5em;
-    line-height: 2.5em;
+    width: 16rem;
+    height: 4rem;
+    line-height: 4rem;
     & svg {
       padding-left: 0.4em;
       height: 0.9em;
@@ -103,9 +113,21 @@
     flex-flow: row;
 
     & input {
+      box-sizing: border-box;
       font-size: 1.6rem;
-      height: 3.75em;
-      width: 33.75em;
+      height: 6rem;
+      width: 54rem;
+    }
+    & a {
+      box-sizing: border-box;
+      font-size: 2.2rem;
+      width: 21rem;
+      height: 6rem;
+      aspect-ratio: 7/2;
+      line-height: 6rem;
+      & svg {
+        padding-left: 0.4em;
+      }
     }
   }
   & label.email-label,
@@ -130,17 +152,7 @@
 
   .error-msg.is--invalid {
     color: #e50914;
-    bottom: -20px;
     left: 20px;
-  }
-  & a {
-    font-size: 2.2rem;
-    width: 9.545454545454545em;
-    height: 2.9em;
-    aspect-ratio: 7/2;
-    line-height: 2.727272727272727em;
-    & svg {
-      padding-left: 0.4em;
-    }
+    bottom: -20px;
   }
 }

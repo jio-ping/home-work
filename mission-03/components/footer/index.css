@@ -7,8 +7,19 @@
     display: flex;
     letter-spacing: -0.01px;
   }
+  & address {
+    font-style: normal;
+    & p {
+      font-weight: 700;
+    }
+  }
+
+  & a {
+    width: 100%;
+  }
 }
 
+/* 데스크톱*/
 @media (min-width: 768px) {
   .footer {
     padding: 5rem 20rem;
@@ -29,34 +40,38 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-
-    & li {
-      display: inline;
-    }
+    row-gap: 1.6rem;
   }
-  & address > h3 {
+
+  & li {
+    font-size: 1.6rem;
+    height: 1em;
+  }
+  & address > p {
     font-size: 2.2rem;
     margin-bottom: 16px;
   }
   & address > span {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     display: block;
     line-height: 150%;
-    font-style: normal;
+
     color: #919191;
   }
 }
 
+/* 모바일 */
 @media (max-width: 768px) {
   .footer {
     padding: 4rem 2.5rem;
-    row-gap: 30px;
+    row-gap: 3rem;
   }
   .paragraph {
     flex-flow: column;
     & p {
       font-size: 2rem;
+      font-weight: 700;
       letter-spacing: -0.01px;
       word-break: break-word;
     }
@@ -72,9 +87,12 @@
     margin-bottom: 21px;
     & li {
       display: inline;
+      font-size: 1.4rem;
+      height: 1em;
+      margin-bottom: 2.1rem;
     }
   }
-  & address > h3 {
+  & address > p {
     font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -83,5 +101,6 @@
     font-size: 1.4rem;
     line-height: 150%;
     display: block;
+    font-weight: 400;
   }
 }

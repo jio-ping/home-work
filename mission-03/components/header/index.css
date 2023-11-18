@@ -12,6 +12,8 @@
 @media (max-width: 768px) {
   .header-wrapper {
     padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
   }
   .lang-log-wrapper {
     column-gap: 1.5rem;
