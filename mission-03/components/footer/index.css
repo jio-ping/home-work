@@ -2,20 +2,37 @@
   color: #919191;
   font-family: Spoqa Han Sans Neo;
   display: flex;
-  flex-flow: column wrap;
-  row-gap: 46px;
+  flex-flow: column nowrap;
+  .paragraph {
+    display: flex;
+    letter-spacing: -0.01px;
+  }
 }
 
 @media (min-width: 768px) {
   .footer {
-    padding: 50px 200px;
+    padding: 5rem 20rem;
+    row-gap: 46px;
   }
-  & p {
-    font-size: 2rem;
+  .paragraph {
+    & p {
+      font-size: 2rem;
+      margin-block: 0;
+      letter-spacing: -0.01px;
+    }
   }
   & a {
     font-size: 1.6rem;
     color: #acacac;
+  }
+  & ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    & li {
+      display: inline;
+    }
   }
   & address > h3 {
     font-size: 2.2rem;
@@ -27,13 +44,44 @@
     display: block;
     line-height: 150%;
     font-style: normal;
+    color: #919191;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 2.5rem;
+    row-gap: 30px;
+  }
+  .paragraph {
+    flex-flow: column;
+    & p {
+      font-size: 2rem;
+      letter-spacing: -0.01px;
+      word-break: break-word;
+    }
+  }
+  & a {
+    font-size: 1.4rem;
+    color: #919191;
   }
   & ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 21px;
     & li {
       display: inline;
     }
+  }
+  & address > h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  & address > span {
+    font-size: 1.4rem;
+    line-height: 150%;
+    display: block;
   }
 }
