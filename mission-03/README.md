@@ -15,6 +15,13 @@
 
 <img src = "https://github.com/jio-ping/home-work/assets/134420660/548e3f6f-be64-45b6-bf97-95a44779d35e" width="400" height="100%">
 
+### feedback
+
+- 입력서식과 레이블 연결이 잘못되어 있음. <input> 요소의 id 값을 <label> 요소의 for 속성에 지정해야 함.
+- <h2>영화, TV 프로그램을 <br />무제한으로.</h2> 제목이 적절한지 고민해 보기 바람.
+
+=> 23-11-28 수정완료
+
 #### WBS, 진행정도
 
 | 제목                  | 내용                                           | 커밋 메시지                          | 수정해야할 부분                 |

@@ -26,9 +26,7 @@ body {
   }
   .home-main-wrapper {
     row-gap: 28px;
-    & h2 {
-      font-size: 6rem;
-    }
+
     :nth-child(2) {
       font-size: 2rem;
     }
@@ -38,6 +36,9 @@ body {
     :last-child {
       font-size: 1.6rem;
       /* padding-bottom: 174px; */
+    }
+    .promotion-msg {
+      font-size: 6rem;
     }
   }
 }
@@ -53,9 +54,7 @@ body {
     font-size: 10px;
     width: 33.9rem;
     margin: 0 auto;
-    & h2 {
-      font-size: 3.4rem;
-    }
+
     :nth-child(2) {
       font-size: 1.8rem;
     }
@@ -66,6 +65,9 @@ body {
     :nth-child(4) {
       font-size: 1.2rem;
       font-weight: 400;
+    }
+    .promotion-msg {
+      font-size: 3.4rem;
     }
   }
 }
